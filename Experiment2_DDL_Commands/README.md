@@ -105,123 +105,183 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
 
+<img width="1184" height="362" alt="Screenshot 2025-09-27 081952" src="https://github.com/user-attachments/assets/5d0e0574-e136-4f51-9874-e4f69d049dea" />
+
+**Query**
 ```sql
--- Paste your SQL code below for Question 1
+CREATE table Departments(
+DepartmentID INTEGER,
+DepartmentName TEXT
+);
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="1218" height="358" alt="Screenshot 2025-09-27 082155" src="https://github.com/user-attachments/assets/ddb5cd54-e02a-409c-91a0-4f4adb2e73ae" />
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="1249" height="237" alt="Screenshot 2025-09-27 082216" src="https://github.com/user-attachments/assets/1937307b-7288-4f49-bb89-3b006abbbc21" />
 
+**Query**
 ```sql
--- Paste your SQL code below for Question 2
+INSERT into Student_details(RollNo,Name,Gender,Subject,MARKS)
+VALUES(201,"David Lee","M","Physics",92);
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1216" height="267" alt="Screenshot 2025-09-27 082246" src="https://github.com/user-attachments/assets/71ce5118-d974-4188-a103-d5916e002690" />
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="979" height="425" alt="Screenshot 2025-09-27 082712" src="https://github.com/user-attachments/assets/b907a0a6-d205-4903-84ce-56154525a3aa" />
 
+**Query**
 ```sql
--- Paste your SQL code below for Question 3
+ALTER table employee
+RENAME COLUMN id TO employee_id;
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1212" height="306" alt="Screenshot 2025-09-27 082728" src="https://github.com/user-attachments/assets/3e4459a1-ccb8-47d9-a4a3-b70ab697c3c1" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
 
+<img width="800" height="384" alt="Screenshot 2025-09-27 082742" src="https://github.com/user-attachments/assets/05b27f34-6448-41fc-ba99-fe46c7b4bbfb" />
+
+**Query**
 ```sql
--- Paste your SQL code below for Question 4
+INSERT into Employee(EmployeeID,Name,Position,Department,Salary)
+VALUES(2,'John Smith','Developer','IT',75000);
+INSERT into Employee(EmployeeID,Name,Position,Department,Salary) 
+VALUES(3,'Anna Bell','Designer','Marketing',68000);
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1208" height="385" alt="Screenshot 2025-09-27 082756" src="https://github.com/user-attachments/assets/e66b6006-9ea4-482c-8385-0fcab1629373" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="764" height="356" alt="Screenshot 2025-09-27 082807" src="https://github.com/user-attachments/assets/4d449fa9-77e1-46fe-9dd6-34570f5ed3a8" />
 
+**Query**
 ```sql
--- Paste your SQL code below for Question 5
+CREATE table Products(
+ProductID Primary Key,
+ProductName NOT NULL,
+Price REAL CHECK(Price>0),
+Stock INTEGER CHECK(Stock>=0)
+);
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1207" height="338" alt="Screenshot 2025-09-27 082833" src="https://github.com/user-attachments/assets/78972368-59fa-4c55-810d-f2bfb1e2726c" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
 
+<img width="1220" height="403" alt="Screenshot 2025-09-27 083201" src="https://github.com/user-attachments/assets/4c9532d5-9484-4645-a73a-858303c479d3" />
+
+**Query**
 ```sql
--- Paste your SQL code below for Question 6
+CREATE table Products(
+ProductID INTEGER primary key,
+ProductName TEXT unique NOT NULL,
+Price REAL CHECK(Price>0),
+StockQuantity INTEGER CHECK(StockQuantity>0)
+);
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1204" height="328" alt="Screenshot 2025-09-27 083225" src="https://github.com/user-attachments/assets/1b409d32-f830-4f89-b90c-6e5ed45e5555" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
 
+<img width="987" height="303" alt="Screenshot 2025-09-27 083243" src="https://github.com/user-attachments/assets/dab32f5e-5869-4633-b734-c523b62ddc3e" />
+
+**Query**
 ```sql
--- Paste your SQL code below for Question 7
+ALTER table employee add designation varchar(50);
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1214" height="333" alt="Screenshot 2025-09-27 083312" src="https://github.com/user-attachments/assets/8ce84ed1-65c9-4c4e-88ac-fce6122b8558" />
 
 **Question 8**
 ---
--- Paste Question 8 here
 
+<img width="744" height="348" alt="Screenshot 2025-09-27 083324" src="https://github.com/user-attachments/assets/48d5d1fe-bf5d-4aa6-ab36-2c48d4de359a" />
+
+**Query**
 ```sql
--- Paste your SQL code below for Question 8
+INSERT into Products(ProductID,ProductName,Price,Stock) 
+SELECT ProductID,ProductName,Price,Stock
+FROM Discontinued_products 
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1225" height="364" alt="Screenshot 2025-09-27 083348" src="https://github.com/user-attachments/assets/f7cb7031-9503-45d0-9420-b6a6e1e831cb" />
 
 **Question 9**
 ---
--- Paste Question 9 here
 
+<img width="1201" height="352" alt="Screenshot 2025-09-27 083419" src="https://github.com/user-attachments/assets/1b6b1e34-fb06-4327-a884-201d385cc7af" />
+
+**Query**
 ```sql
--- Paste your SQL code below for Question 9
+CREATE table Shipments(
+ShipmentID INTEGER primary key,
+ShipmentDate DATE,
+SupplierID INTEGER,
+OrderID INTEGER,
+foreign key (SupplierID) references Suppliers(SupplierID) 
+foreign key (OrderID) references Orders(OrderID) 
+);
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1220" height="307" alt="Screenshot 2025-09-27 083434" src="https://github.com/user-attachments/assets/968ec386-e974-4134-921c-7cf4f8be142e" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
 
+<img width="1022" height="442" alt="Screenshot 2025-09-27 083447" src="https://github.com/user-attachments/assets/50e4274b-5f75-4db3-9de1-a8bd51b0c05c" />
+
+**Query**
 ```sql
--- Paste your SQL code below for Question 10
+CREATE table item(
+item_id TEXT Primary Key,
+item_desc TEXT NOT NULL,
+rate INTEGER NOT NULL,
+icom_id TEXT CHECK(length(icom_id)=4),
+foreign key(icom_id) references company(com_id)
+  on update cascade
+  on delete cascade
+);
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1198" height="369" alt="Screenshot 2025-09-27 083458" src="https://github.com/user-attachments/assets/f45604d3-02f4-4a71-825b-c435e1a5be0b" />
+
+## Module 1 Homechallenge Grade: 
+
+<img width="1064" height="74" alt="Screenshot 2025-09-27 084309" src="https://github.com/user-attachments/assets/3e37c480-21a6-4d29-a1bf-9870bfcdf306" />
 
 
 ## RESULT
